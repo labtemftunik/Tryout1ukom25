@@ -178,7 +178,7 @@ async function koreksi(){
 
     let salah = bankSoal.length - benar;
 
-    let nilai = benar / bankSoal.length * 100;
+    let nilai = Number((benar / bankSoal.length * 100).toFixed(2));
 
     localStorage.setItem("nilai", nilai);
     localStorage.setItem("benar", benar);
